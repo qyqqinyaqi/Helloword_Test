@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>小瓶子去火星了</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        .dingwei {
+            position: absolute;
+        }
+        /*小瓶子飞火星了*/
+        .bottle_bg {
+            width: 1920px;
+            height: 800px;
+            display: block;
+            position: relative;
+            margin: 0 auto;
+        }
+        .bottle_one {
+            left: 888px;
+            top: 269px;
+            z-index: 4;
+            transform: scale(1);
+            -ms-transform: scale(1); /* IE 9 */
+            -moz-transform: scale(1); /* Firefox */
+            -webkit-transform: scale(1); /* Safari 和 Chrome */
+            -o-transform: scale(1);
+            transition: all 1s ease-in 0s;
+            -moz-transition-timing-function: all 1s ease-in 0s; /* Firefox 4 */
+            -webkit-transition-timing-function: all 1s ease-in 0s; /* Safari 和 Chrome */
+            -o-transition-timing-function: all 1s ease-in 0s; /* Opera */
+        }
+        .bottle_two {
+            left: 1340px;
+            top: 345px;
+            z-index: 4;
+            transform: scale(1);
+            -ms-transform: scale(1); /* IE 9 */
+            -moz-transform: scale(1); /* Firefox */
+            -webkit-transform: scale(1); /* Safari 和 Chrome */
+            -o-transform: scale(1);
+            transition: all 1s ease-in 0.1s;
+            -moz-transition-timing-function: all 1s ease-in 0s; /* Firefox 4 */
+            -webkit-transition-timing-function: all 1s ease-in 0s; /* Safari 和 Chrome */
+            -o-transition-timing-function: all 1s ease-in 0s; /* Opera */
+        }
+        .bottle_three {
+            left: 569px;
+            top: 603px;
+            z-index: 4;
+            transform: scale(1);
+            -ms-transform: scale(1); /* IE 9 */
+            -moz-transform: scale(1); /* Firefox */
+            -webkit-transform: scale(1); /* Safari 和 Chrome */
+            -o-transform: scale(1);
+            transition: all 1s linear 0.2s;
+            -moz-transition-timing-function: all 1s ease-in 0.2s; /* Firefox 4 */
+            -webkit-transition-timing-function: all 1s ease-in 0.2s; /* Safari 和 Chrome */
+            -o-transition-timing-function: all 1s ease-in 0.2s; /* Opera */
+        }
+        .bottle_four {
+            left: 1505px;
+            top: 703px;
+            z-index: 4;
+            transform: scale(1);
+            -ms-transform: scale(1); /* IE 9 */
+            -moz-transform: scale(1); /* Firefox */
+            -webkit-transform: scale(1); /* Safari 和 Chrome */
+            -o-transform: scale(1);
+            transition: all 1s linear 0s;
+            -moz-transition-timing-function: all 1s ease-in 0s; /* Firefox 4 */
+            -webkit-transition-timing-function: all 1s ease-in 0s; /* Safari 和 Chrome */
+            -o-transition-timing-function: all 1s ease-in 0s; /* Opera */
+        }
+		.bottle_five{
+			left: 680px;
+            top: 697px;
+            z-index: 4;
+            transform: scale(0);
+            -ms-transform: scale(0); /* IE 9 */
+            -moz-transform: scale(0); /* Firefox */
+            -webkit-transform: scale(0); /* Safari 和 Chrome */
+            -o-transform: scale(0);
+            transition: all 1s linear 0s;
+            -moz-transition-timing-function: all 1s ease-in 0s; /* Firefox 4 */
+            -webkit-transition-timing-function: all 1s ease-in 0s; /* Safari 和 Chrome */
+            -o-transition-timing-function: all 1s ease-in 0s; /* Opera */
+		}
+		.bottle_six{
+			left: 585px;
+            top: 726px;
+            z-index: 4;
+            transform: scale(0);
+            -ms-transform: scale(0); /* IE 9 */
+            -moz-transform: scale(0); /* Firefox */
+            -webkit-transform: scale(0); /* Safari 和 Chrome */
+            -o-transform: scale(0);
+            transition: all 1s linear 0s;
+            -moz-transition-timing-function: all 1s ease-in 0s; /* Firefox 4 */
+            -webkit-transition-timing-function: all 1s ease-in 0s; /* Safari 和 Chrome */
+            -o-transition-timing-function: all 1s ease-in 0s; /* Opera */
+		}
+		.bottle_seven{
+			left: 1110px;
+            top: 718px;
+            z-index: 4;
+            transform: scale(0);
+            -ms-transform: scale(0); /* IE 9 */
+            -moz-transform: scale(0); /* Firefox */
+            -webkit-transform: scale(0); /* Safari 和 Chrome */
+            -o-transform: scale(0);
+            transition: all 1s linear 0s;
+            -moz-transition-timing-function: all 1s ease-in 0s; /* Firefox 4 */
+            -webkit-transition-timing-function: all 1s ease-in 0s; /* Safari 和 Chrome */
+            -o-transition-timing-function: all 1s ease-in 0s; /* Opera */
+		}
+		.bottle_eight{
+			left: 825px;
+            top: 718px;
+            z-index: 4;
+            transform: scale(0);
+            -ms-transform: scale(0); /* IE 9 */
+            -moz-transform: scale(0); /* Firefox */
+            -webkit-transform: scale(0); /* Safari 和 Chrome */
+            -o-transform: scale(0);
+            transition: all 1s linear 0s;
+            -moz-transition-timing-function: all 1s ease-in 0s; /* Firefox 4 */
+            -webkit-transition-timing-function: all 1s ease-in 0s; /* Safari 和 Chrome */
+            -o-transition-timing-function: all 1s ease-in 0s; /* Opera */
+		}
+		.bottle_nine{
+			left: 1259px;
+            top: 720px;
+            z-index: 4;
+            transform: scale(0);
+            -ms-transform: scale(0); /* IE 9 */
+            -moz-transform: scale(0); /* Firefox */
+            -webkit-transform: scale(0); /* Safari 和 Chrome */
+            -o-transform: scale(0);
+            transition: all 1s linear 0s;
+            -moz-transition-timing-function: all 1s ease-in 0s; /* Firefox 4 */
+            -webkit-transition-timing-function: all 1s ease-in 0s; /* Safari 和 Chrome */
+            -o-transition-timing-function: all 1s ease-in 0s; /* Opera */
+		}
+        .bottle_MK {
+            left: 890px;
+            top: 290px;
+            z-index: 4;
+            transform: scale(1);
+            -ms-transform: scale(1); /* IE 9 */
+            -moz-transform: scale(1); /* Firefox */
+            -webkit-transform: scale(1); /* Safari 和 Chrome */
+            -o-transform: scale(1);
+            transition: all 1s linear 0s;
+            -moz-transition-timing-function: all 1s ease-in 0s; /* Firefox 4 */
+            -webkit-transition-timing-function: all 1s ease-in 0s; /* Safari 和 Chrome */
+            -o-transition-timing-function: all 1s ease-in 0s; /* Opera */
+        }
+        .bottle_FM {
+            left: 1271px;
+            top: 453px;
+            z-index: 4;
+            transform: scale(1);
+            -ms-transform: scale(1); /* IE 9 */
+            -moz-transform: scale(1); /* Firefox */
+            -webkit-transform: scale(1); /* Safari 和 Chrome */
+            -o-transform: scale(1);
+            transition: all 1s linear 0s;
+            -moz-transition-timing-function: all 1s ease-in 0s; /* Firefox 4 */
+            -webkit-transition-timing-function: all 1s ease-in 0s; /* Safari 和 Chrome */
+            -o-transition-timing-function: all 1s ease-in 0s; /* Opera */
+        }
+        .bottle_AT {
+            left: 731px;
+            top: 591px;
+            z-index: 4;
+            transform: scale(1);
+            -ms-transform: scale(1); /* IE 9 */
+            -moz-transform: scale(1); /* Firefox */
+            -webkit-transform: scale(1); /* Safari 和 Chrome */
+            -o-transform: scale(1);
+            transition: all 1s linear 0s;
+            -moz-transition-timing-function: all 1s ease-in 0s; /* Firefox 4 */
+            -webkit-transition-timing-function: all 1s ease-in 0s; /* Safari 和 Chrome */
+            -o-transition-timing-function: all 1s ease-in 0s; /* Opera */
+        }
+        .bottle_bg:hover .bottle_one {
+            left: 970px;
+            top: 211px;
+            transform: scale(0.8);
+            -ms-transform: scale(0.8); /* IE 9 */
+            -moz-transform: scale(0.8); /* Firefox */
+            -webkit-transform: scale(0.8); /* Safari 和 Chrome */
+            -o-transform: scale(0.8);
+        }
+        .bottle_bg:hover .bottle_two {
+            left: 1278px;
+            top: 263px;
+            transform: scale(0.8);
+            -ms-transform: scale(0.8); /* IE 9 */
+            -moz-transform: scale(0.8); /* Firefox */
+            -webkit-transform: scale(0.8); /* Safari 和 Chrome */
+            -o-transform: scale(0.8);
+        }
+        .bottle_bg:hover .bottle_three {
+            left: 735px;
+            top: 443px;
+            transform: scale(0.8);
+            -ms-transform: scale(0.8); /* IE 9 */
+            -moz-transform: scale(0.8); /* Firefox */
+            -webkit-transform: scale(0.8); /* Safari 和 Chrome */
+            -o-transform: scale(0.8);
+        }
+        .bottle_bg:hover .bottle_four {
+            left: 1407px;
+            top: 516px;
+            transform: scale(0.8);
+            -ms-transform: scale(0.8); /* IE 9 */
+            -moz-transform: scale(0.8); /* Firefox */
+            -webkit-transform: scale(0.8); /* Safari 和 Chrome */
+            -o-transform: scale(0.8);
+        }
+		.bottle_bg:hover .bottle_five {
+            left: 696px;
+            top: 598px;
+            transform: scale(1);
+            -ms-transform: scale(1); /* IE 9 */
+            -moz-transform: scale(1); /* Firefox */
+            -webkit-transform: scale(1); /* Safari 和 Chrome */
+            -o-transform: scale(1);
+        }
+		.bottle_bg:hover .bottle_six {
+            left: 597px;
+            top: 660px;
+            transform: scale(1);
+            -ms-transform: scale(1); /* IE 9 */
+            -moz-transform: scale(1); /* Firefox */
+            -webkit-transform: scale(1); /* Safari 和 Chrome */
+            -o-transform: scale(1);
+        }
+		.bottle_bg:hover .bottle_seven {
+            left: 1109px;
+            top: 660px;
+            transform: scale(1);
+            -ms-transform: scale(1); /* IE 9 */
+            -moz-transform: scale(1); /* Firefox */
+            -webkit-transform: scale(1); /* Safari 和 Chrome */
+            -o-transform: scale(1);
+        }
+		.bottle_bg:hover .bottle_eight {
+            left: 800px;
+            top: 601px;
+            transform: scale(1);
+            -ms-transform: scale(1); /* IE 9 */
+            -moz-transform: scale(1); /* Firefox */
+            -webkit-transform: scale(1); /* Safari 和 Chrome */
+            -o-transform: scale(1);
+        }
+		.bottle_bg:hover .bottle_nine {
+            left: 1214px;
+            top: 516px;
+            transform: scale(1);
+            -ms-transform: scale(1); /* IE 9 */
+            -moz-transform: scale(1); /* Firefox */
+            -webkit-transform: scale(1); /* Safari 和 Chrome */
+            -o-transform: scale(1);
+        }
+        .bottle_bg:hover .bottle_FM {
+            left: 1236px;
+            top: 333px;
+            transform: scale(0.7);
+            -ms-transform: scale(0.7); /* IE 9 */
+            -moz-transform: scale(0.7); /* Firefox */
+            -webkit-transform: scale(0.7); /* Safari 和 Chrome */
+            -o-transform: scale(0.7);
+        }
+        .bottle_bg:hover .bottle_AT {
+            left: 855px;
+            top: 435px;
+            transform: scale(0.7);
+            -ms-transform: scale(0.7); /* IE 9 */
+            -moz-transform: scale(0.7); /* Firefox */
+            -webkit-transform: scale(0.7); /* Safari 和 Chrome */
+            -o-transform: scale(0.7);
+        }
+        .bottle_bg:hover .bottle_MK {
+            left: 900px;
+            top: 250px;
+          
+       } 
+	
+
+    </style>
+</head>
+<body>
+    <a class="bottle_bg" href="//ju.taobao.com/tg/brand_items.htm?act_sign_id=8950165&amp;scene=taobao_shop" target="_blank">
+        <div style="background: url(https://img.alicdn.com/imgextra/i4/1968965736/TB2Cy7.eVXXXXa6XpXXXXXXXXXX-1968965736.jpg) no-repeat; width: 1920px; height: 412px; top: 0px; left: 0px; z-index:1" class="dingwei">
+        </div>
+        <div style="background: url(https://img.alicdn.com/imgextra/i4/1968965736/TB2yQNsfXXXXXahXXXXXXXXXXXX-1968965736.jpg) no-repeat; width: 1920px; height: 388px; top: 412px; left: 0px; z-index: 1; " class="dingwei">
+        </div>
+        <div class="dingwei" style="left:494px; top:0px; z-index:8;">
+            <img src="https://img.alicdn.com/imgextra/i1/1968965736/TB2mLJNfXXXXXXRXXXXXXXXXXXX-1968965736.png" alt=" jhs_logo.png" />
+        </div>
+        <div class="dingwei bottle_one">
+            <img src="https://img.alicdn.com/imgextra/i4/1968965736/TB2TXVrfXXXXXawXXXXXXXXXXXX-1968965736.png" alt=" pingzi1.png" />
+        </div>
+        <div class="dingwei bottle_two">
+            <img src="https://img.alicdn.com/imgextra/i3/1968965736/TB2Af4wfXXXXXXmXXXXXXXXXXXX-1968965736.png" alt=" pingzi2.png" />
+        </div>
+        <div class="dingwei bottle_three">
+            <img src="https://img.alicdn.com/imgextra/i1/1968965736/TB2Nv0gfXXXXXXgXpXXXXXXXXXX-1968965736.png" alt=" pingzi3.png" />
+        </div>
+        <div class="dingwei bottle_four">
+            <img src="https://img.alicdn.com/imgextra/i1/1968965736/TB22ypefXXXXXXwXpXXXXXXXXXX-1968965736.png" alt=" pingzi4.png" />
+        </div>
+        <div class="dingwei bottle_five">
+            <img src="https://img.alicdn.com/imgextra/i3/1968965736/TB2ms8_fXXXXXcrXXXXXXXXXXXX-1968965736.png" alt=" pingzi5.png"/>
+        </div>
+        <div class="dingwei bottle_six">
+            <img src="https://img.alicdn.com/imgextra/i3/1968965736/TB2lg9nfXXXXXXcXXXXXXXXXXXX-1968965736.png" alt=" pingzi6.png"/>
+        </div>
+        <div class="dingwei bottle_seven">
+            <img src="https://img.alicdn.com/imgextra/i4/1968965736/TB2sRylfXXXXXXAXXXXXXXXXXXX-1968965736.png" alt=" pingzi7.png"/>
+        </div>
+        <div class="dingwei bottle_eight">
+            <img src="https://img.alicdn.com/imgextra/i2/1968965736/TB2SCyafXXXXXb9XXXXXXXXXXXX-1968965736.png" alt=" pingzi8.png"/>
+        </div>
+        <div class="dingwei bottle_nine">
+            <img src="https://img.alicdn.com/imgextra/i1/1968965736/TB2Bgt2fXXXXXaRXpXXXXXXXXXX-1968965736.png" alt=" pingzi9.png"/>
+        </div>
+        <div class="dingwei bottle_FM">
+            <img src="https://img.alicdn.com/imgextra/i1/1968965736/TB2IWI8eVXXXXbFXpXXXXXXXXXX-1968965736.png" alt=" 辅酶.png" />
+        </div>
+        <div class="dingwei bottle_AT">
+            <img src="https://img.alicdn.com/imgextra/i4/1968965736/TB2tXXtfXXXXXX8XXXXXXXXXXXX-1968965736.png" alt=" 未标题-2.png" />
+        </div>
+        <div class="dingwei bottle_MK">
+            <img src="https://img.alicdn.com/imgextra/i2/1968965736/TB26DXSfXXXXXciXpXXXXXXXXXX-1968965736.png" alt=" MK_G.png"/>
+        </div>
+        <div class="dingwei" style=" left:688px; top:0px; z-index:5">
+            <img src="https://img.alicdn.com/imgextra/i2/1968965736/TB23zRhfXXXXXcTXXXXXXXXXXXX-1968965736.png" alt=" 碟身.png" />
+        </div>
+        <div class="dingwei" style=" left:420px; top:188px; z-index:5">
+            <img src="https://img.alicdn.com/imgextra/i4/1968965736/TB2hbg5eVXXXXb8XpXXXXXXXXXX-1968965736.png" alt=" 文字.png" />
+        </div>
+        <div class="dingwei" style=" left: 489px; top: 33px; z-index: 7">
+            <img src="https://img.alicdn.com/imgextra/i2/1968965736/TB2qp0XfXXXXXaOXpXXXXXXXXXX-1968965736.png" alt=" 未标题-14.png" />
+        </div>
+    
+        <div class="dingwei" style=" left: 392px; top: 652px; z-index: 7">
+            <img src="https://img.alicdn.com/imgextra/i3/1968965736/TB2AJxvfXXXXXXzXXXXXXXXXXXX-1968965736.png" alt=" 未标题-16_02.png" />
+        </div>
+    </a>
+</body>
+</html>
